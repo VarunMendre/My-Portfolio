@@ -7,26 +7,23 @@ const Education = () => {
 
   const education = [
     {
-      institution: "Vasavi College of Engineering",
-      degree: "Bachelor of Engineering",
-      field: "Electronics and Communication Engineering (ECE)",
-      period: "2019-2023"
+      institution: "ASM CSIT COLLEGE, SPPU University",
+      degree: "Master's of Science in Computer Science (MSC.CS)",
+      field: "",
+      period: "Aug. 2025 – May 2027"
     },
     {
-      institution: "Sri Chaitanya Junior College",
-      degree: "Intermediate",
-      field: "MPC",
-      period: "2017-2019"
+      institution: "ASM CSIT COLLEGE, SPPU University",
+      degree: "Bachelor of Science in Computer Science (BSC.CS)",
+      field: "(CGPA: 7.98)",
+      period: "Aug. 2022 – May 2025"
     }
   ];
 
   const achievements = [
-    "Winner – IWD Hackathon by Google Developer Group Hyderabad",
-    "4* Coder on CodeChef, solved 600+ DSA problems across platforms like LeetCode, CodeChef, and CSES",
-    "CodeChef Student Chapter & GDG CP Lead – Led competitive programming events and workshops",
-    "National Handball Goalkeeper – Kendriya Vidyalaya",
-    "2019 National & Indian National Mathematics Olympiad (INMO) Regionalist",
-    "Participated in Hackathon conducted by VIIT ACM Chapter"
+    "2nd Prize in Science Exhibition – Demonstrated Virtual Mouse Controller",
+    "Received Letter of Recommendation (LOR) for outstanding performance at Acmegrade",
+    "Web Developer Intern at Acmegrade PVT. LTD (Jan 2025 - Mar 2025)"
   ];
 
   const containerVariants = {

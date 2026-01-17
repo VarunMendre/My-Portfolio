@@ -6,68 +6,55 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "FitBill - Gym Management System",
-      description: "A comprehensive cross-platform solution designed for modern gym businesses that streamlines membership management, attendance tracking, and financial operations. The system automatically sends timely membership renewal notifications, monitors daily facility usage patterns, and provides insightful financial analytics through intuitive dashboards, enabling gym owners to make data-driven decisions and optimize operational efficiency.",
-      tech: ["React Native", "Express.js", "Prisma", "SQL", "AWS Lambda"],
-      image: "/images/fitbill-preview.png",
-      liveLink: "http://youtube.com/watch?v=Dbkf_2kh1ho",
+      title: "Storage App",
+      description: "A production-ready full-stack cloud storage application. Built with the MERN stack and hosted on AWS EC2 with NGINX and PM2 for zero downtime. Implemented scalable file storage/delivery using AWS S3 and CloudFront CDN. Developed a Subscription-Based Access system using Razorpay to manage storage limits and user plans.",
+      tech: ["React", "Node.js", "Express", "MongoDB", "Redis", "Razorpay", "OAuth", "AWS S3", "CloudFront"],
+      image: "/images/storage-app.png",
+      liveLink: "https://github.com/VarunMendre/Personal-Cloud-Drive",
       highlights: [
-        "Automated membership renewal alerts",
-        "Daily check-in/check-out tracking",
-        "Financial dashboards",
-        "Supports hundreds of daily active users"
+        "Zero downtime deployment with NGINX & PM2",
+        "Scalable storage with AWS S3 & CloudFront",
+        "Subscription management with Razorpay",
+        "Secure authentication with OAuth"
       ]
     },
     {
-      title: "Student Attendance Tracking System",
-      description: "An innovative serverless attendance solution leveraging AWS Lambda and Python to deliver cost-effective, real-time attendance tracking for educational institutions. The system employs sophisticated HTML parsing techniques with BeautifulSoup to extract attendance data from various sources, processes it through a highly optimized pipeline, and delivers accurate, instantaneous results to thousands of users daily without incurring operational costs, making it an ideal solution for resource-constrained educational environments.",
-      tech: ["AWS Lambda", "Python", "WebSocket", "DynamoDB", "BeautifulSoup"],
-      image: "/images/attendance-preview.png",
-      liveLink: "https://github.com/sri-ganeshk/Attendance_tracker",
+      title: "Custom CI-CD-Server",
+      description: "An automated CI/CD orchestrator on AWS EC2 to streamline deployments for frontend and backend services. Utilizes SSH-based remote execution and PM2 process management for automated, zero-downtime application updates. Features a Telegram Bot for real-time deployment notifications.",
+      tech: ["Node.js", "Express.js", "PM2", "NGINX", "EC2", "TelegramBot", "SSH"],
+      image: "/images/cicd-server.png",
+      liveLink: "https://github.com/VarunMendre/Custom-CI-CD-Server",
       highlights: [
-        "Handles ~3,000 unique daily users",
-        "10,000+ requests/day at zero cost",
-        "Avg response time of 1.5-2 seconds",
-        "Real-time HTML parsing"
+        "Automated deployment orchestrator",
+        "Zero-downtime updates with PM2",
+        "Real-time Telegram notifications",
+        "Remote execution via SSH"
       ]
     },
     {
-      title: "StudySphere – Curated Learning Platform",
-      description: "An advanced educational platform that revolutionizes self-paced learning through AI-powered content organization and generation. StudySphere allows users to curate and structure courses on any topic with intelligent assistance, automatically generating customized flashcards, comprehensive notes, and interactive quizzes tailored to individual learning preferences. The integration with Google Gemini API enables sophisticated content summarization and knowledge extraction, creating a personalized learning experience that adapts to users' comprehension levels and learning styles.",
-      tech: ["Next.js", "Prisma", "Google Gemini API", "TailwindCSS", "PostgreSQL"],
-      image: "/images/studysphere-preview.png",
-      liveLink: "https://hackthon-six.vercel.app/",
+      title: "Mental-Health-chatbot",
+      description: "A full-stack web application providing mental health support through an intelligent chatbot. Integrates Google Dialogflow for NLU, Flask for backend services, and PostgreSQL for database management. Features secure user authentication and a RESTful chat API.",
+      tech: ["Python", "Flask", "Dialogflow", "PostgreSQL", "Bcrypt", "Google Cloud SDK"],
+      image: "/images/mental-health-bot.png",
+      liveLink: "https://github.com/VarunMendre/Mental-Health-chatbot",
       highlights: [
-        "Automatic flashcards & notes generation",
-        "On-the-fly quizzes",
-        "AI-powered content summarization",
-        "Self-paced, structured learning"
+        "Intelligent Dialogflow integration",
+        "Secure authentication with Bcrypt",
+        "RESTful Chat API",
+        "PostgreSQL database management"
       ]
     },
     {
-      title: "Movie Review Platform",
-      description: "A modern, fully responsive web application designed for movie enthusiasts to discover, review, and engage with film content. The platform leverages The Movie Database API to provide users with real-time access to a vast library of films, complete with detailed information and high-quality imagery. With a robust user authentication system using JWT tokens, the application delivers personalized experiences allowing users to create accounts, save favorites, and contribute their own reviews to the community. The intuitive interface, built with React and styled with Tailwind CSS, ensures a seamless viewing experience across all devices.",
-      tech: ["React", "Tailwind CSS", "TMDB API", "MongoDB", "JWT", "Responsive Design"],
-      image: "/images/movie-review-preview.png",
-      liveLink: "https://movie-review-omega-seven.vercel.app/",
+      title: "Virtual mouse controller",
+      description: "A gesture-based virtual mouse controller using computer vision. Leverages MediaPipe and OpenCV to recognize hand gestures via webcam and map them to system actions like moving the cursor, clicking, scrolling, and volume control. Built with a Flask-based web interface.",
+      tech: ["Python", "OpenCV", "MediaPipe", "Flask", "PyAutoGUI"],
+      image: "/images/virtual-mouse.png",
+      liveLink: "https://github.com/VarunMendre/Virtual_mouse_controller",
       highlights: [
-        "Real-time movie data integration with TMDB API",
-        "Secure JWT-based user authentication",
-        "Intuitive and fully responsive design",
-        "Personalized user experiences with saved preferences"
-      ]
-    },
-    {
-      title: "Pressure Cooker Whistle Counter",
-      description: "An innovative Android application born from everyday necessity, designed to automate the mundane task of counting pressure cooker whistles during cooking. This offline-first app utilizes sophisticated audio processing algorithms to detect and count whistles in real-time using the device's microphone, without requiring an internet connection. With a focus on privacy, the application processes all audio data locally and on-the-fly without storing any recordings. The implementation includes custom sound analysis using Fast Fourier Transform (FFT) and Tarsos DSP library to accurately identify the distinctive whistle frequency pattern amid background noise, making cooking precision effortless for users.",
-      tech: ["Java", "Kotlin", "FFT", "Tarsos DSP", "Spectrograms", "Android Media"],
-      image: "/images/whistle-counter-preview.png",
-      liveLink: "",
-      highlights: [
-        "Offline operation for areas with limited connectivity",
-        "Privacy-focused with no data storage",
-        "Real-time audio processing and frequency analysis",
-        "Future ML integration for multi-cooker scenarios"
+        "Real-time hand landmark detection",
+        "Gesture-to-system action mapping",
+        "Flask-based control interface",
+        "MediaPipe-driven accuracy"
       ]
     }
   ];

@@ -7,20 +7,24 @@ const Skills = () => {
 
   const categories = [
     {
-      name: "Frontend",
-      skills: ["React.js", "React Native", "Next.js", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS"]
+      name: "Core Languages",
+      skills: ["C", "C++ (STL)", "JavaScript (ES6)", "Python", "PHP"]
     },
     {
-      name: "Backend",
-      skills: ["Node.js", "Express.js", "Python", "C++", "REST APIs", "WebSockets"]
+      name: "Frontend & Styling",
+      skills: ["React", "HTML5", "CSS3", "Tailwind CSS", "Responsive Design"]
     },
     {
-      name: "Database",
-      skills: ["SQL", "Prisma", "MongoDB", "DynamoDB", "PostgreSQL"]
+      name: "Backend & APIs",
+      skills: ["Node.js", "Express.js", "RESTful APIs", "MVC Architecture"]
     },
     {
-      name: "DevOps & Tools",
-      skills: ["AWS Lambda", "Git", "BeautifulSoup", "Google Gemini API"]
+      name: "Databases & Security",
+      skills: ["MongoDB", "PostgreSQL", "Redis", "Auth/Security", "JWT"]
+    },
+    {
+      name: "DevOps & Cloud",
+      skills: ["AWS (EC2, S3, CDN)", "PM2", "NGINX", "CI/CD", "GitHub Actions"]
     }
   ];
 
@@ -54,7 +58,7 @@ const Skills = () => {
         </motion.div>
 
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
