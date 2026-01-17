@@ -45,16 +45,16 @@ const Projects = () => {
       ]
     },
     {
-      title: "Virtual mouse controller",
-      description: "A gesture-based virtual mouse controller using computer vision. Leverages MediaPipe and OpenCV to recognize hand gestures via webcam and map them to system actions like moving the cursor, clicking, scrolling, and volume control. Built with a Flask-based web interface.",
-      tech: ["Python", "OpenCV", "MediaPipe", "Flask", "PyAutoGUI"],
-      image: "/images/virtual-mouse.png",
-      liveLink: "https://github.com/VarunMendre/Virtual_mouse_controller",
+      title: "Event-Driven Notification System",
+      description: "A production-ready, scalable notification service leveraging event-driven architecture to handle asynchronous notification delivery at scale. Built with Node.js, Express, RabbitMQ, PostgreSQL, and Resend API, this system demonstrates enterprise-grade patterns including idempotent message processing, dead letter queues (DLQ), automatic retry mechanisms, and clean separation of concerns using Service/Repository pattern and Handler Registry.",
+      tech: ["Node.js", "Express.js", "RabbitMQ", "PostgreSQL", "Resend API", "Docker", "Joi", "amqplib"],
+      image: "/images/placeholder-project.png",
+      liveLink: "https://github.com/VarunMendre/Event-Driven-Notification-Service",
       highlights: [
-        "Real-time hand landmark detection",
-        "Gesture-to-system action mapping",
-        "Flask-based control interface",
-        "MediaPipe-driven accuracy"
+        "Scalable Event-Driven Architecture with RabbitMQ",
+        "Production-Ready Patterns (Service/Repository, Handler Registry)",
+        "Robust Error Handling with retry mechanism and DLQ",
+        "Clean Code Architecture with middleware validation"
       ]
     }
   ];
