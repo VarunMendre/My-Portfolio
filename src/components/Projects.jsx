@@ -11,6 +11,7 @@ const Projects = () => {
       tech: ["React", "Node.js", "Express", "MongoDB", "Redis", "Razorpay", "OAuth", "AWS S3", "CloudFront"],
       image: "/images/storage-app.png",
       liveLink: "https://github.com/VarunMendre/Personal-Cloud-Drive",
+      deployLink: "https://cloudvault.cloud",
       highlights: [
         "Zero downtime deployment with NGINX & PM2",
         "Scalable storage with AWS S3 & CloudFront",
@@ -208,21 +209,35 @@ const Projects = () => {
                 </div>
               </div>
 
-              {projects[activeProject].liveLink && (
-                <div className="mt-6 md:mt-8 flex justify-center md:justify-end">
+              <div className="mt-6 md:mt-8 flex flex-col md:flex-row justify-center md:justify-end gap-4">
+                {projects[activeProject].deployLink && (
+                  <a 
+                    href={projects[activeProject].deployLink}
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="font-mono text-xs inline-flex items-center justify-center px-5 py-2 md:px-6 md:py-2 border border-light hover:bg-light hover:bg-opacity-5 transition-all duration-300 group"
+                  >
+                    Live Link : cloudvault.cloud
+                    <svg className="ml-2 w-3 h-3 md:w-4 md:h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                  </a>
+                )}
+
+                {projects[activeProject].liveLink && (
                   <a 
                     href={projects[activeProject].liveLink}
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="font-mono text-xs inline-flex items-center px-5 py-2 md:px-6 md:py-2 border border-light hover:bg-light hover:bg-opacity-5 transition-all duration-300 group"
+                    className="font-mono text-xs inline-flex items-center justify-center px-5 py-2 md:px-6 md:py-2 border border-light hover:bg-light hover:bg-opacity-5 transition-all duration-300 group"
                   >
                     VIEW PROJECT
                     <svg className="ml-2 w-3 h-3 md:w-4 md:h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                     </svg>
                   </a>
-                </div>
-              )}
+                )}
+              </div>
             </motion.div>
           </motion.div>
         </div>
