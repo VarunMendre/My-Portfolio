@@ -6,6 +6,34 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "ChatMe — Real-Time Instant Messaging",
+      description: "A lightning-fast, real-time messaging platform designed for instant communication without the friction of registration. ChatMe allows users to create private rooms and start chatting in seconds, solving the problem of invasive tracking and long setup times for temporary or anonymous discussions.",
+      tech: ["React.js", "Node.js", "Express", "Socket.io", "Tailwind CSS", "Lucide React", "GitHub Actions", "AWS", "Cloudflare"],
+      image: "/images/chatme.png",
+      liveLink: "https://github.com/VarunMendre/SocketRoom",
+      deployLink: "https://chat-me.cloudvault.cloud",
+      highlights: [
+        "Neo-Brutalist UI/UX with high-contrast design",
+        "Real-time low-latency communication via Socket.io",
+        "Zero-persistence ephemeral architecture for privacy",
+        "Fluid layout optimized for all screen spectrums"
+      ]
+    },
+    {
+      title: "ImageShrink: Premium Serverless Image Compressor",
+      description: "A high-level, event-driven serverless application designed to optimize web performance and reduce storage costs. It automatically compresses high-resolution images upon upload using a robust pipeline of AWS services, providing a seamless \"drop and forget\" experience.",
+      tech: ["React", "Node.js", "Express.js", "AWS Lambda", "AWS S3", "Serverless", "Sharp", "Lucide React"],
+      image: "/images/imageshrink.png",
+      liveLink: "https://github.com/VarunMendre/Serverless-Image-Compressor",
+      deployLink: "https://img-compressor.cloudvault.cloud/",
+      highlights: [
+        "Automated event-driven S3 to Lambda pipeline",
+        "90%+ storage optimization using Sharp engine",
+        "Secure architecture with S3 pre-signed URLs",
+        "Premium glassmorphic drag-and-drop interface"
+      ]
+    },
+    {
       title: "Storage App",
       description: "A production-ready full-stack cloud storage application. Built with the MERN stack and hosted on AWS EC2 with NGINX and PM2 for zero downtime. Implemented scalable file storage/delivery using AWS S3 and CloudFront CDN. Developed a Subscription-Based Access system using Razorpay to manage storage limits and user plans.",
       tech: ["React", "Node.js", "Express", "MongoDB", "Redis", "Razorpay", "OAuth", "AWS S3", "CloudFront"],
