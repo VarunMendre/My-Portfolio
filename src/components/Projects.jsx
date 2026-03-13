@@ -34,17 +34,17 @@ const Projects = () => {
       ]
     },
     {
-      title: "Storage App",
-      description: "A production-ready full-stack cloud storage application. Built with the MERN stack and hosted on AWS EC2 with NGINX and PM2 for zero downtime. Implemented scalable file storage/delivery using AWS S3 and CloudFront CDN. Developed a Subscription-Based Access system using Razorpay to manage storage limits and user plans.",
-      tech: ["React", "Node.js", "Express", "MongoDB", "Redis", "Razorpay", "OAuth", "AWS S3", "CloudFront"],
+      title: "CloudVault \u2014 Cloud Storage & File Sharing",
+      description: "A highly scalable, serverless cloud storage platform built for secure file management and seamless sharing. Migrated the backend to AWS Lambda with Serverless Framework, reducing infrastructure costs by ~60%. Features automated CI/CD deployments via GitHub Actions, high-performance S3 direct uploads, Google Drive imports, and EventBridge cron jobs for fully automated subscription lifecycle and storage management.",
+      tech: ["React", "Node.js", "AWS Lambda", "Serverless", "EventBridge", "MongoDB", "Razorpay", "GitHub Actions", "Tailwind"],
       image: "/images/storage-app.png",
       liveLink: "https://github.com/VarunMendre/Personal-Cloud-Drive",
       deployLink: "https://cloudvault.cloud",
       highlights: [
-        "Zero downtime deployment with NGINX & PM2",
-        "Scalable storage with AWS S3 & CloudFront",
-        "Subscription management with Razorpay",
-        "Secure authentication with OAuth"
+        "Serverless AWS Lambda backend reducing infra costs by ~60%",
+        "Automated CI/CD via GitHub Actions with sub-60s deploys & bot alerts",
+        "EventBridge cron jobs automating subscriptions & orphaned cleanup",
+        "High-performance S3 Direct Uploads & Google Drive imports"
       ]
     },
     {
