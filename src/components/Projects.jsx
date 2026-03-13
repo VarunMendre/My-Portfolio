@@ -85,6 +85,18 @@ const Projects = () => {
         "Robust Error Handling with retry mechanism and DLQ",
         "Clean Code Architecture with middleware validation"
       ]
+    },
+    {
+      title: "OrderXpress - Restaurant Management",
+      description: "A comprehensive, multi-tenant restaurant management and digital ordering ecosystem. It allows customers to browse menus and place orders via QR code from their web browsers, while providing restaurant staff an intuitive mobile application to track and serve orders in real-time. Features advanced AI-driven menu digitization to automatically parse physical menus during restaurant onboarding.",
+      tech: ["React.js", "React Native", "Node.js", "MongoDB", "Socket.io", "Google Vision API", "Redis"],
+      liveLink: "https://github.com/ShardulDhiwar/OrderXpress",
+      highlights: [
+        "Built React.js customer web endpoints and React Native staff mobile apps",
+        "Implemented real-time Socket.io connections for instant order updates",
+        "Developed Python/PaddleOCR microservice for AI-powered menu digitization",
+        "Custom multi-tenant routing, JWT authentication, and Razorpay integration"
+      ]
     }
   ];
   
