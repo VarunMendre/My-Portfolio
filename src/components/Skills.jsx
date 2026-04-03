@@ -1,5 +1,12 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { 
+  FaPython, FaPhp, FaNodeJs, FaReact, FaHtml5, FaCss3Alt, FaAws, FaMobileAlt, FaServer, FaLock, FaCogs
+} from 'react-icons/fa';
+import { 
+  SiC, SiCplusplus, SiJavascript, SiTailwindcss, SiExpress, SiMongodb, SiPostgresql, SiRedis, SiJsonwebtokens, SiPm2, SiNginx, SiGithubactions, SiSocketdotio, SiMysql
+} from 'react-icons/si';
+import { MdApi } from 'react-icons/md';
 
 const Skills = () => {
   const ref = useRef(null);
@@ -8,23 +15,54 @@ const Skills = () => {
   const categories = [
     {
       name: "Core Languages",
-      skills: ["C", "C++ (STL)", "JavaScript (ES6)", "Python", "PHP"]
+      skills: [
+        { name: "C", icon: SiC, color: "#A8B9CC" }, 
+        { name: "C++ (STL)", icon: SiCplusplus, color: "#00599C" }, 
+        { name: "JavaScript (ES6)", icon: SiJavascript, color: "#F7DF1E" }, 
+        { name: "Python", icon: FaPython, color: "#3776AB" }, 
+        { name: "PHP", icon: FaPhp, color: "#777BB4" }
+      ]
     },
     {
       name: "Frontend & Styling",
-      skills: ["React", "HTML5", "CSS3", "Tailwind CSS", "Responsive Design"]
+      skills: [
+        { name: "React", icon: FaReact, color: "#61DAFB" }, 
+        { name: "HTML5", icon: FaHtml5, color: "#E34F26" }, 
+        { name: "CSS3", icon: FaCss3Alt, color: "#1572B6" }, 
+        { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" }, 
+        { name: "Responsive Design", icon: FaMobileAlt, color: "#4ADE80" }
+      ]
     },
     {
       name: "Backend & APIs",
-      skills: ["Node.js", "Express.js", "RESTful APIs", "MVC Architecture"]
+      skills: [
+        { name: "Node.js", icon: FaNodeJs, color: "#339933" }, 
+        { name: "Express.js", icon: SiExpress, color: "#FFFFFF" }, 
+        { name: "RESTful APIs", icon: MdApi, color: "#FF6C37" },
+        { name: "Socket.io", icon: SiSocketdotio, color: "#FFFFFF" },
+        { name: "MVC Architecture", icon: FaServer, color: "#9333EA" }
+      ]
     },
     {
       name: "Databases & Security",
-      skills: ["MongoDB", "PostgreSQL", "Redis", "Auth/Security", "JWT"]
+      skills: [
+        { name: "MongoDB", icon: SiMongodb, color: "#47A248" }, 
+        { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" }, 
+        { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+        { name: "Redis", icon: SiRedis, color: "#DC382D" }, 
+        { name: "Auth/Security", icon: FaLock, color: "#FACC15" }, 
+        { name: "JWT", icon: SiJsonwebtokens, color: "#D63AFF" }
+      ]
     },
     {
       name: "DevOps & Cloud",
-      skills: ["AWS (EC2, S3, CDN)", "PM2", "NGINX", "CI/CD", "GitHub Actions"]
+      skills: [
+        { name: "AWS (EC2, S3, CDN)", icon: FaAws, color: "#FF9900" }, 
+        { name: "PM2", icon: SiPm2, color: "#2B037A" }, 
+        { name: "NGINX", icon: SiNginx, color: "#009639" }, 
+        { name: "CI/CD", icon: FaCogs, color: "#0EA5E9" }, 
+        { name: "GitHub Actions", icon: SiGithubactions, color: "#2088FF" }
+      ]
     }
   ];
 
@@ -72,18 +110,20 @@ const Skills = () => {
               <h3 className="text-light font-medium mb-4 pb-2 border-b border-muted border-opacity-20">
                 {category.name}
               </h3>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-3">
                 {category.skills.map((skill, j) => (
                   <motion.span 
                     key={j} 
-                    className="text-sm bg-secondary px-3 py-1 rounded-sm"
+                    className="group text-sm bg-secondary px-3 py-2 rounded-sm flex items-center gap-2 border border-muted border-opacity-10 shadow-sm cursor-pointer"
+                    style={{ "--hover-color": skill.color }}
                     whileHover={{ 
                       y: -2, 
-                      backgroundColor: "rgba(245, 245, 245, 0.05)", 
+                      backgroundColor: "rgba(245, 245, 245, 0.08)",
                       transition: { duration: 0.2 } 
                     }}
                   >
-                    {skill}
+                    {skill.icon && <skill.icon className="text-lg transition-colors duration-300 group-hover:text-[color:var(--hover-color)]" />}
+                    {skill.name}
                   </motion.span>
                 ))}
               </div>
