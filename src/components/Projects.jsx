@@ -6,6 +6,33 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "CloudVault \u2014 Cloud Storage & File Sharing",
+      description: "A highly scalable, serverless cloud storage platform built for secure file management and seamless sharing. Migrated the backend to AWS Lambda with Serverless Framework, reducing infrastructure costs by ~60%. Features automated CI/CD deployments via GitHub Actions, high-performance S3 direct uploads, Google Drive imports, and EventBridge cron jobs for fully automated subscription lifecycle and storage management.",
+      tech: ["React", "Node.js", "AWS Lambda", "Serverless", "EventBridge", "MongoDB", "Razorpay", "GitHub Actions", "Tailwind"],
+      image: "/images/storage-app.png",
+      liveLink: "https://github.com/VarunMendre/Personal-Cloud-Drive",
+      deployLink: "https://cloudvault.cloud",
+      highlights: [
+        "Serverless AWS Lambda backend reducing infra costs by ~60%",
+        "Automated CI/CD via GitHub Actions with sub-60s deploys & bot alerts",
+        "EventBridge cron jobs automating subscriptions & orphaned cleanup",
+        "High-performance S3 Direct Uploads & Google Drive imports"
+      ]
+    },
+    {
+      title: "Custom CI-CD-Server",
+      description: "An automated CI/CD orchestrator on AWS EC2 to streamline deployments for frontend and backend services. Utilizes SSH-based remote execution and PM2 process management for automated, zero-downtime application updates. Features a Telegram Bot for real-time deployment notifications.",
+      tech: ["Node.js", "Express.js", "PM2", "NGINX", "EC2", "TelegramBot", "SSH"],
+      image: "/images/cicd-server.png",
+      liveLink: "https://github.com/VarunMendre/Custom-CI-CD-Server",
+      highlights: [
+        "Automated deployment orchestrator",
+        "Zero-downtime updates with PM2",
+        "Real-time Telegram notifications",
+        "Remote execution via SSH"
+      ]
+    },
+    {
       title: "ChatMe — Real-Time Instant Messaging",
       description: "A lightning-fast, real-time messaging platform designed for instant communication without the friction of registration. ChatMe allows users to create private rooms and start chatting in seconds, solving the problem of invasive tracking and long setup times for temporary or anonymous discussions.",
       tech: ["React.js", "Node.js", "Express", "Socket.io", "Tailwind CSS", "Lucide React", "GitHub Actions", "AWS", "Cloudflare"],
@@ -31,33 +58,6 @@ const Projects = () => {
         "90%+ storage optimization using Sharp engine",
         "Secure architecture with S3 pre-signed URLs",
         "Premium glassmorphic drag-and-drop interface"
-      ]
-    },
-    {
-      title: "CloudVault \u2014 Cloud Storage & File Sharing",
-      description: "A highly scalable, serverless cloud storage platform built for secure file management and seamless sharing. Migrated the backend to AWS Lambda with Serverless Framework, reducing infrastructure costs by ~60%. Features automated CI/CD deployments via GitHub Actions, high-performance S3 direct uploads, Google Drive imports, and EventBridge cron jobs for fully automated subscription lifecycle and storage management.",
-      tech: ["React", "Node.js", "AWS Lambda", "Serverless", "EventBridge", "MongoDB", "Razorpay", "GitHub Actions", "Tailwind"],
-      image: "/images/storage-app.png",
-      liveLink: "https://github.com/VarunMendre/Personal-Cloud-Drive",
-      deployLink: "https://cloudvault.cloud",
-      highlights: [
-        "Serverless AWS Lambda backend reducing infra costs by ~60%",
-        "Automated CI/CD via GitHub Actions with sub-60s deploys & bot alerts",
-        "EventBridge cron jobs automating subscriptions & orphaned cleanup",
-        "High-performance S3 Direct Uploads & Google Drive imports"
-      ]
-    },
-    {
-      title: "Custom CI-CD-Server",
-      description: "An automated CI/CD orchestrator on AWS EC2 to streamline deployments for frontend and backend services. Utilizes SSH-based remote execution and PM2 process management for automated, zero-downtime application updates. Features a Telegram Bot for real-time deployment notifications.",
-      tech: ["Node.js", "Express.js", "PM2", "NGINX", "EC2", "TelegramBot", "SSH"],
-      image: "/images/cicd-server.png",
-      liveLink: "https://github.com/VarunMendre/Custom-CI-CD-Server",
-      highlights: [
-        "Automated deployment orchestrator",
-        "Zero-downtime updates with PM2",
-        "Real-time Telegram notifications",
-        "Remote execution via SSH"
       ]
     },
     {

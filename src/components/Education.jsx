@@ -15,7 +15,6 @@ const Education = () => {
     {
       institution: "ASM CSIT COLLEGE, SPPU University",
       degree: "Bachelor of Science in Computer Science (BSC.CS)",
-      field: "(CGPA: 7.98)",
       period: "Aug. 2022 – May 2025"
     }
   ];
