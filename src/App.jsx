@@ -11,6 +11,7 @@ import Education from './components/Education.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import Loader from './components/Loader.jsx';
+import AIAssistant from './components/AIAssistant.jsx';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -50,6 +51,7 @@ function App() {
                     <Contact />
                   </main>
                   <Footer />
+                  <AIAssistant />
                 </motion.div>
               )}
             </AnimatePresence>
